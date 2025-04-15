@@ -8,8 +8,8 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.0
 	github.com/rs/zerolog v1.33.0
-	github.com/timtyndale/libsignal-protocol-go v1.0.0
-	github.com/timtyndale/go-util v1.0.0
+	github.com/timtyndale/libsignal-protocol-go v1.0.1
+	github.com/timtyndale/go-util v1.0.1
 	golang.org/x/crypto v0.36.0
 	golang.org/x/net v0.37.0
 	google.golang.org/protobuf v1.36.5
