@@ -10,10 +10,10 @@ import (
 	"context"
 	"encoding/base64"
 
-	"go.mau.fi/util/random"
+	"github.com/timtyndale/util/random"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/types"
+	waBinary "github.com/timtyndale/whatsmeow/binary"
+	"github.com/timtyndale/whatsmeow/types"
 )
 
 type PushConfig interface {

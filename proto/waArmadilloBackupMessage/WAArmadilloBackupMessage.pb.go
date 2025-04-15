@@ -13,7 +13,7 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waArmadilloBackupCommon "go.mau.fi/whatsmeow/proto/waArmadilloBackupCommon"
+	waArmadilloBackupCommon "github.com/timtyndale/whatsmeow/proto/waArmadilloBackupCommon"
 
 	_ "embed"
 )

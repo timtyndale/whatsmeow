@@ -19,10 +19,10 @@ import (
 	"net/url"
 	"os"
 
-	"go.mau.fi/util/random"
+	"github.com/timtyndale/util/random"
 
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/util/cbcutil"
+	"github.com/timtyndale/whatsmeow/socket"
+	"github.com/timtyndale/whatsmeow/util/cbcutil"
 )
 
 // UploadResponse contains the data from the attachment upload, which can be put into a message to send the attachment.

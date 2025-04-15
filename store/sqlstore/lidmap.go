@@ -15,10 +15,10 @@ import (
 	"slices"
 	"sync"
 
-	"go.mau.fi/util/dbutil"
+	"github.com/timtyndale/util/dbutil"
 
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
+	"github.com/timtyndale/whatsmeow/store"
+	"github.com/timtyndale/whatsmeow/types"
 )
 
 type CachedLIDMap struct {

@@ -13,10 +13,10 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waAdv "go.mau.fi/whatsmeow/proto/waAdv"
-	waCommon "go.mau.fi/whatsmeow/proto/waCommon"
-	waCompanionReg "go.mau.fi/whatsmeow/proto/waCompanionReg"
-	waMmsRetry "go.mau.fi/whatsmeow/proto/waMmsRetry"
+	waAdv "github.com/timtyndale/whatsmeow/proto/waAdv"
+	waCommon "github.com/timtyndale/whatsmeow/proto/waCommon"
+	waCompanionReg "github.com/timtyndale/whatsmeow/proto/waCompanionReg"
+	waMmsRetry "github.com/timtyndale/whatsmeow/proto/waMmsRetry"
 
 	_ "embed"
 )

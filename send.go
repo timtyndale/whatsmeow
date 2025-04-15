@@ -20,20 +20,20 @@ import (
 	"time"
 
 	"github.com/rs/zerolog"
-	"go.mau.fi/libsignal/groups"
-	"go.mau.fi/libsignal/keys/prekey"
-	"go.mau.fi/libsignal/protocol"
-	"go.mau.fi/libsignal/session"
-	"go.mau.fi/libsignal/signalerror"
-	"go.mau.fi/util/ptr"
-	"go.mau.fi/util/random"
+	"github.com/timtyndale/libsignal/groups"
+	"github.com/timtyndale/libsignal/keys/prekey"
+	"github.com/timtyndale/libsignal/protocol"
+	"github.com/timtyndale/libsignal/session"
+	"github.com/timtyndale/libsignal/signalerror"
+	"github.com/timtyndale/util/ptr"
+	"github.com/timtyndale/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/timtyndale/whatsmeow/binary"
+	"github.com/timtyndale/whatsmeow/proto/waCommon"
+	"github.com/timtyndale/whatsmeow/proto/waE2E"
+	"github.com/timtyndale/whatsmeow/types"
+	"github.com/timtyndale/whatsmeow/types/events"
 )
 
 // GenerateMessageID generates a random string that can be used as a message ID on WhatsApp.

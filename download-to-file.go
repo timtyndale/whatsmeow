@@ -17,11 +17,11 @@ import (
 	"strings"
 	"time"
 
-	"go.mau.fi/util/fallocate"
-	"go.mau.fi/util/retryafter"
+	"github.com/timtyndale/util/fallocate"
+	"github.com/timtyndale/util/retryafter"
 
-	"go.mau.fi/whatsmeow/proto/waMediaTransport"
-	"go.mau.fi/whatsmeow/util/cbcutil"
+	"github.com/timtyndale/whatsmeow/proto/waMediaTransport"
+	"github.com/timtyndale/whatsmeow/util/cbcutil"
 )
 
 type File interface {

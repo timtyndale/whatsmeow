@@ -14,20 +14,20 @@ import (
 	"fmt"
 	"time"
 
-	"go.mau.fi/libsignal/ecc"
-	"go.mau.fi/libsignal/groups"
-	"go.mau.fi/libsignal/keys/prekey"
-	"go.mau.fi/libsignal/protocol"
+	"github.com/timtyndale/libsignal/ecc"
+	"github.com/timtyndale/libsignal/groups"
+	"github.com/timtyndale/libsignal/keys/prekey"
+	"github.com/timtyndale/libsignal/protocol"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/proto/waMsgApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgTransport"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/timtyndale/whatsmeow/binary"
+	"github.com/timtyndale/whatsmeow/proto/waCommon"
+	"github.com/timtyndale/whatsmeow/proto/waConsumerApplication"
+	"github.com/timtyndale/whatsmeow/proto/waE2E"
+	"github.com/timtyndale/whatsmeow/proto/waMsgApplication"
+	"github.com/timtyndale/whatsmeow/proto/waMsgTransport"
+	"github.com/timtyndale/whatsmeow/types"
+	"github.com/timtyndale/whatsmeow/types/events"
 )
 
 // Number of sent messages to cache in memory for handling retry receipts.
