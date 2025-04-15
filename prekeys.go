@@ -15,7 +15,7 @@ import (
 	"github.com/timtyndale/libsignal-protocol-go/ecc"
 	"github.com/timtyndale/libsignal-protocol-go/keys/identity"
 	"github.com/timtyndale/libsignal-protocol-go/keys/prekey"
-	"github.com/timtyndale/libsignal-protocol-go/go-util/optional"
+	"github.com/timtyndale/libsignal-protocol-go/util/optional"
 
 	waBinary "github.com/timtyndale/whatsmeow/binary"
 	"github.com/timtyndale/whatsmeow/types"
