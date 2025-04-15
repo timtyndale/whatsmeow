@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/timtyndale/libsignal/ecc"
-	"github.com/timtyndale/libsignal/keys/identity"
-	"github.com/timtyndale/libsignal/keys/prekey"
-	"github.com/timtyndale/libsignal/util/optional"
+	"github.com/timtyndale/libsignal-protocol-go/ecc"
+	"github.com/timtyndale/libsignal-protocol-go/keys/identity"
+	"github.com/timtyndale/libsignal-protocol-go/keys/prekey"
+	"github.com/timtyndale/libsignal-protocol-go/go-util/optional"
 
 	waBinary "github.com/timtyndale/whatsmeow/binary"
 	"github.com/timtyndale/whatsmeow/types"

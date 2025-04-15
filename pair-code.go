@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/random"
 	"golang.org/x/crypto/curve25519"
 	"golang.org/x/crypto/pbkdf2"
 

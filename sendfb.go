@@ -15,12 +15,12 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/timtyndale/libsignal/groups"
-	"github.com/timtyndale/libsignal/keys/prekey"
-	"github.com/timtyndale/libsignal/protocol"
-	"github.com/timtyndale/libsignal/session"
-	"github.com/timtyndale/libsignal/signalerror"
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/libsignal-protocol-go/groups"
+	"github.com/timtyndale/libsignal-protocol-go/keys/prekey"
+	"github.com/timtyndale/libsignal-protocol-go/protocol"
+	"github.com/timtyndale/libsignal-protocol-go/session"
+	"github.com/timtyndale/libsignal-protocol-go/signalerror"
+	"github.com/timtyndale/go-util/random"
 	"google.golang.org/protobuf/proto"
 
 	waBinary "github.com/timtyndale/whatsmeow/binary"

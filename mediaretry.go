@@ -9,7 +9,7 @@ package whatsmeow
 import (
 	"fmt"
 
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/random"
 	"google.golang.org/protobuf/proto"
 
 	waBinary "github.com/timtyndale/whatsmeow/binary"

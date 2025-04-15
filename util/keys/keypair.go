@@ -8,8 +8,8 @@
 package keys
 
 import (
-	"github.com/timtyndale/libsignal/ecc"
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/libsignal-protocol-go/ecc"
+	"github.com/timtyndale/go-util/random"
 	"golang.org/x/crypto/curve25519"
 )
 

@@ -7,13 +7,13 @@
 package store
 
 import (
-	"github.com/timtyndale/libsignal/ecc"
-	groupRecord "github.com/timtyndale/libsignal/groups/state/record"
-	"github.com/timtyndale/libsignal/keys/identity"
-	"github.com/timtyndale/libsignal/protocol"
-	"github.com/timtyndale/libsignal/serialize"
-	"github.com/timtyndale/libsignal/state/record"
-	"github.com/timtyndale/libsignal/state/store"
+	"github.com/timtyndale/libsignal-protocol-go/ecc"
+	groupRecord "github.com/timtyndale/libsignal-protocol-go/groups/state/record"
+	"github.com/timtyndale/libsignal-protocol-go/keys/identity"
+	"github.com/timtyndale/libsignal-protocol-go/protocol"
+	"github.com/timtyndale/libsignal-protocol-go/serialize"
+	"github.com/timtyndale/libsignal-protocol-go/state/record"
+	"github.com/timtyndale/libsignal-protocol-go/state/store"
 
 	"github.com/timtyndale/whatsmeow/util/keys"
 )

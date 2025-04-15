@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/timtyndale/util/retryafter"
+	"github.com/timtyndale/go-util/retryafter"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 

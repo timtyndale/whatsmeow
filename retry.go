@@ -14,10 +14,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/timtyndale/libsignal/ecc"
-	"github.com/timtyndale/libsignal/groups"
-	"github.com/timtyndale/libsignal/keys/prekey"
-	"github.com/timtyndale/libsignal/protocol"
+	"github.com/timtyndale/libsignal-protocol-go/ecc"
+	"github.com/timtyndale/libsignal-protocol-go/groups"
+	"github.com/timtyndale/libsignal-protocol-go/keys/prekey"
+	"github.com/timtyndale/libsignal-protocol-go/protocol"
 	"google.golang.org/protobuf/proto"
 
 	waBinary "github.com/timtyndale/whatsmeow/binary"

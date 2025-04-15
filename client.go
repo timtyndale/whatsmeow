@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/random"
 	"golang.org/x/net/proxy"
 
 	"github.com/timtyndale/whatsmeow/appstate"

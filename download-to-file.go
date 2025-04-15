@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/timtyndale/util/fallocate"
-	"github.com/timtyndale/util/retryafter"
+	"github.com/timtyndale/go-util/fallocate"
+	"github.com/timtyndale/go-util/retryafter"
 
 	"github.com/timtyndale/whatsmeow/proto/waMediaTransport"
 	"github.com/timtyndale/whatsmeow/util/cbcutil"

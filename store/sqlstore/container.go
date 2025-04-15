@@ -14,8 +14,8 @@ import (
 	mathRand "math/rand/v2"
 
 	"github.com/google/uuid"
-	"github.com/timtyndale/util/dbutil"
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/dbutil"
+	"github.com/timtyndale/go-util/random"
 
 	"github.com/timtyndale/whatsmeow/proto/waAdv"
 	"github.com/timtyndale/whatsmeow/store"

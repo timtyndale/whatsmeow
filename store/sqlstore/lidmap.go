@@ -15,7 +15,7 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/timtyndale/util/dbutil"
+	"github.com/timtyndale/go-util/dbutil"
 
 	"github.com/timtyndale/whatsmeow/store"
 	"github.com/timtyndale/whatsmeow/types"

@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/timtyndale/libsignal/keys/prekey"
+	"github.com/timtyndale/libsignal-protocol-go/keys/prekey"
 
 	"github.com/timtyndale/whatsmeow/appstate"
 	waBinary "github.com/timtyndale/whatsmeow/binary"

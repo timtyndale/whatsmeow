@@ -15,7 +15,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/timtyndale/libsignal/ecc"
+	"github.com/timtyndale/libsignal-protocol-go/ecc"
 
 	"github.com/timtyndale/whatsmeow/proto/waCompanionReg"
 	"github.com/timtyndale/whatsmeow/proto/waWa6"

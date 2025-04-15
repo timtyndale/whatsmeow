@@ -18,8 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/timtyndale/util/dbutil"
-	"github.com/timtyndale/util/exsync"
+	"github.com/timtyndale/go-util/dbutil"
+	"github.com/timtyndale/go-util/exsync"
 
 	"github.com/timtyndale/whatsmeow/store"
 	"github.com/timtyndale/whatsmeow/types"

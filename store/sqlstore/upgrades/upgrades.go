@@ -9,7 +9,7 @@ package upgrades
 import (
 	"embed"
 
-	"github.com/timtyndale/util/dbutil"
+	"github.com/timtyndale/go-util/dbutil"
 )
 
 var Table dbutil.UpgradeTable

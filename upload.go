@@ -19,7 +19,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/random"
 
 	"github.com/timtyndale/whatsmeow/socket"
 	"github.com/timtyndale/whatsmeow/util/cbcutil"

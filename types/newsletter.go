@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/timtyndale/util/jsontime"
+	"github.com/timtyndale/go-util/jsontime"
 
 	"github.com/timtyndale/whatsmeow/proto/waE2E"
 )

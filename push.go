@@ -10,7 +10,7 @@ import (
 	"context"
 	"encoding/base64"
 
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/random"
 
 	waBinary "github.com/timtyndale/whatsmeow/binary"
 	"github.com/timtyndale/whatsmeow/types"

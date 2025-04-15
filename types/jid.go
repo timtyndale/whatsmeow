@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	signalProtocol "github.com/timtyndale/libsignal/protocol"
+	signalProtocol "github.com/timtyndale/libsignal-protocol-go/protocol"
 )
 
 // Known JID servers on WhatsApp

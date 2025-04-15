@@ -15,7 +15,7 @@ import (
 	"github.com/timtyndale/whatsmeow/proto/waCommon"
 	"github.com/timtyndale/whatsmeow/proto/waE2E"
 
-	"github.com/timtyndale/util/random"
+	"github.com/timtyndale/go-util/random"
 	"google.golang.org/protobuf/proto"
 
 	"github.com/timtyndale/whatsmeow/types"
