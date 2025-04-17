@@ -23,3 +23,5 @@ require (
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
 	golang.org/x/sys v0.31.0 // indirect
 )
+
+replace google.golang.org/protobuf => google.golang.org/protobuf v1.36.6
