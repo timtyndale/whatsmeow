@@ -50,6 +50,16 @@ func New(dialect, address string, log waLog.Logger) (*Container, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to open database: %w", err)
 	}
+
+	// Enable foreign key support for SQLite
+	if dialect == "sqlite3" {
+		_, err = db.Exec("PRAGMA foreign_keys = ON;")
+		if err != nil {
+			db.Close()
+			return nil, fmt.Errorf("failed to enable foreign keys: %w", err)
+		}
+	}
+
 	container := NewWithDB(db, dialect, log)
 	err = container.Upgrade()
 	if err != nil {
