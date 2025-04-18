@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        v6.30.2
-// source: proto/waUserPassword/WAProtobufsUserPassword.proto
+// source: waUserPassword/WAProtobufsUserPassword.proto
 
 package waUserPassword
 
@@ -54,11 +54,11 @@ func (x UserPassword_Transformer) String() string {
 }
 
 func (UserPassword_Transformer) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[0].Descriptor()
+	return file_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[0].Descriptor()
 }
 
 func (UserPassword_Transformer) Type() protoreflect.EnumType {
-	return &file_proto_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[0]
+	return &file_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[0]
 }
 
 func (x UserPassword_Transformer) Number() protoreflect.EnumNumber {
@@ -77,7 +77,7 @@ func (x *UserPassword_Transformer) UnmarshalJSON(b []byte) error {
 
 // Deprecated: Use UserPassword_Transformer.Descriptor instead.
 func (UserPassword_Transformer) EnumDescriptor() ([]byte, []int) {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 0}
+	return file_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 0}
 }
 
 type UserPassword_Encoding int32
@@ -110,11 +110,11 @@ func (x UserPassword_Encoding) String() string {
 }
 
 func (UserPassword_Encoding) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[1].Descriptor()
+	return file_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[1].Descriptor()
 }
 
 func (UserPassword_Encoding) Type() protoreflect.EnumType {
-	return &file_proto_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[1]
+	return &file_waUserPassword_WAProtobufsUserPassword_proto_enumTypes[1]
 }
 
 func (x UserPassword_Encoding) Number() protoreflect.EnumNumber {
@@ -133,7 +133,7 @@ func (x *UserPassword_Encoding) UnmarshalJSON(b []byte) error {
 
 // Deprecated: Use UserPassword_Encoding.Descriptor instead.
 func (UserPassword_Encoding) EnumDescriptor() ([]byte, []int) {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 1}
+	return file_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 1}
 }
 
 type UserPassword struct {
@@ -148,7 +148,7 @@ type UserPassword struct {
 
 func (x *UserPassword) Reset() {
 	*x = UserPassword{}
-	mi := &file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[0]
+	mi := &file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -160,7 +160,7 @@ func (x *UserPassword) String() string {
 func (*UserPassword) ProtoMessage() {}
 
 func (x *UserPassword) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[0]
+	mi := &file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -173,7 +173,7 @@ func (x *UserPassword) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserPassword.ProtoReflect.Descriptor instead.
 func (*UserPassword) Descriptor() ([]byte, []int) {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0}
+	return file_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *UserPassword) GetEncoding() UserPassword_Encoding {
@@ -214,7 +214,7 @@ type UserPassword_TransformerArg struct {
 
 func (x *UserPassword_TransformerArg) Reset() {
 	*x = UserPassword_TransformerArg{}
-	mi := &file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[1]
+	mi := &file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -226,7 +226,7 @@ func (x *UserPassword_TransformerArg) String() string {
 func (*UserPassword_TransformerArg) ProtoMessage() {}
 
 func (x *UserPassword_TransformerArg) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[1]
+	mi := &file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -239,7 +239,7 @@ func (x *UserPassword_TransformerArg) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserPassword_TransformerArg.ProtoReflect.Descriptor instead.
 func (*UserPassword_TransformerArg) Descriptor() ([]byte, []int) {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 0}
+	return file_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 0}
 }
 
 func (x *UserPassword_TransformerArg) GetKey() string {
@@ -269,7 +269,7 @@ type UserPassword_TransformerArg_Value struct {
 
 func (x *UserPassword_TransformerArg_Value) Reset() {
 	*x = UserPassword_TransformerArg_Value{}
-	mi := &file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[2]
+	mi := &file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -281,7 +281,7 @@ func (x *UserPassword_TransformerArg_Value) String() string {
 func (*UserPassword_TransformerArg_Value) ProtoMessage() {}
 
 func (x *UserPassword_TransformerArg_Value) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[2]
+	mi := &file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -294,7 +294,7 @@ func (x *UserPassword_TransformerArg_Value) ProtoReflect() protoreflect.Message 
 
 // Deprecated: Use UserPassword_TransformerArg_Value.ProtoReflect.Descriptor instead.
 func (*UserPassword_TransformerArg_Value) Descriptor() ([]byte, []int) {
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 0, 0}
+	return file_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP(), []int{0, 0, 0}
 }
 
 func (x *UserPassword_TransformerArg_Value) GetValue() isUserPassword_TransformerArg_Value_Value {
@@ -339,11 +339,11 @@ func (*UserPassword_TransformerArg_Value_AsBlob) isUserPassword_TransformerArg_V
 func (*UserPassword_TransformerArg_Value_AsUnsignedInteger) isUserPassword_TransformerArg_Value_Value() {
 }
 
-var File_proto_waUserPassword_WAProtobufsUserPassword_proto protoreflect.FileDescriptor
+var File_waUserPassword_WAProtobufsUserPassword_proto protoreflect.FileDescriptor
 
-const file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDesc = "" +
+const file_waUserPassword_WAProtobufsUserPassword_proto_rawDesc = "" +
 	"\n" +
-	"2proto/waUserPassword/WAProtobufsUserPassword.proto\x12\x17WAProtobufsUserPassword\"\xfa\x04\n" +
+	",waUserPassword/WAProtobufsUserPassword.proto\x12\x17WAProtobufsUserPassword\"\xfa\x04\n" +
 	"\fUserPassword\x12J\n" +
 	"\bencoding\x18\x01 \x01(\x0e2..WAProtobufsUserPassword.UserPassword.EncodingR\bencoding\x12S\n" +
 	"\vtransformer\x18\x02 \x01(\x0e21.WAProtobufsUserPassword.UserPassword.TransformerR\vtransformer\x12\\\n" +
@@ -365,27 +365,27 @@ const file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDesc = "" +
 	"\vUTF8_BROKEN\x10\x01B6Z4github.com/timtyndale/whatsmeow/proto/waUserPassword"
 
 var (
-	file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescOnce sync.Once
-	file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescData []byte
+	file_waUserPassword_WAProtobufsUserPassword_proto_rawDescOnce sync.Once
+	file_waUserPassword_WAProtobufsUserPassword_proto_rawDescData []byte
 )
 
-func file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP() []byte {
-	file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescOnce.Do(func() {
-		file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDesc), len(file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDesc)))
+func file_waUserPassword_WAProtobufsUserPassword_proto_rawDescGZIP() []byte {
+	file_waUserPassword_WAProtobufsUserPassword_proto_rawDescOnce.Do(func() {
+		file_waUserPassword_WAProtobufsUserPassword_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_waUserPassword_WAProtobufsUserPassword_proto_rawDesc), len(file_waUserPassword_WAProtobufsUserPassword_proto_rawDesc)))
 	})
-	return file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDescData
+	return file_waUserPassword_WAProtobufsUserPassword_proto_rawDescData
 }
 
-var file_proto_waUserPassword_WAProtobufsUserPassword_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
-var file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_proto_waUserPassword_WAProtobufsUserPassword_proto_goTypes = []any{
+var file_waUserPassword_WAProtobufsUserPassword_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
+var file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_waUserPassword_WAProtobufsUserPassword_proto_goTypes = []any{
 	(UserPassword_Transformer)(0),             // 0: WAProtobufsUserPassword.UserPassword.Transformer
 	(UserPassword_Encoding)(0),                // 1: WAProtobufsUserPassword.UserPassword.Encoding
 	(*UserPassword)(nil),                      // 2: WAProtobufsUserPassword.UserPassword
 	(*UserPassword_TransformerArg)(nil),       // 3: WAProtobufsUserPassword.UserPassword.TransformerArg
 	(*UserPassword_TransformerArg_Value)(nil), // 4: WAProtobufsUserPassword.UserPassword.TransformerArg.Value
 }
-var file_proto_waUserPassword_WAProtobufsUserPassword_proto_depIdxs = []int32{
+var file_waUserPassword_WAProtobufsUserPassword_proto_depIdxs = []int32{
 	1, // 0: WAProtobufsUserPassword.UserPassword.encoding:type_name -> WAProtobufsUserPassword.UserPassword.Encoding
 	0, // 1: WAProtobufsUserPassword.UserPassword.transformer:type_name -> WAProtobufsUserPassword.UserPassword.Transformer
 	3, // 2: WAProtobufsUserPassword.UserPassword.transformerArg:type_name -> WAProtobufsUserPassword.UserPassword.TransformerArg
@@ -397,12 +397,12 @@ var file_proto_waUserPassword_WAProtobufsUserPassword_proto_depIdxs = []int32{
 	0, // [0:4] is the sub-list for field type_name
 }
 
-func init() { file_proto_waUserPassword_WAProtobufsUserPassword_proto_init() }
-func file_proto_waUserPassword_WAProtobufsUserPassword_proto_init() {
-	if File_proto_waUserPassword_WAProtobufsUserPassword_proto != nil {
+func init() { file_waUserPassword_WAProtobufsUserPassword_proto_init() }
+func file_waUserPassword_WAProtobufsUserPassword_proto_init() {
+	if File_waUserPassword_WAProtobufsUserPassword_proto != nil {
 		return
 	}
-	file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[2].OneofWrappers = []any{
+	file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes[2].OneofWrappers = []any{
 		(*UserPassword_TransformerArg_Value_AsBlob)(nil),
 		(*UserPassword_TransformerArg_Value_AsUnsignedInteger)(nil),
 	}
@@ -410,18 +410,18 @@ func file_proto_waUserPassword_WAProtobufsUserPassword_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDesc), len(file_proto_waUserPassword_WAProtobufsUserPassword_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_waUserPassword_WAProtobufsUserPassword_proto_rawDesc), len(file_waUserPassword_WAProtobufsUserPassword_proto_rawDesc)),
 			NumEnums:      2,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_proto_waUserPassword_WAProtobufsUserPassword_proto_goTypes,
-		DependencyIndexes: file_proto_waUserPassword_WAProtobufsUserPassword_proto_depIdxs,
-		EnumInfos:         file_proto_waUserPassword_WAProtobufsUserPassword_proto_enumTypes,
-		MessageInfos:      file_proto_waUserPassword_WAProtobufsUserPassword_proto_msgTypes,
+		GoTypes:           file_waUserPassword_WAProtobufsUserPassword_proto_goTypes,
+		DependencyIndexes: file_waUserPassword_WAProtobufsUserPassword_proto_depIdxs,
+		EnumInfos:         file_waUserPassword_WAProtobufsUserPassword_proto_enumTypes,
+		MessageInfos:      file_waUserPassword_WAProtobufsUserPassword_proto_msgTypes,
 	}.Build()
-	File_proto_waUserPassword_WAProtobufsUserPassword_proto = out.File
-	file_proto_waUserPassword_WAProtobufsUserPassword_proto_goTypes = nil
-	file_proto_waUserPassword_WAProtobufsUserPassword_proto_depIdxs = nil
+	File_waUserPassword_WAProtobufsUserPassword_proto = out.File
+	file_waUserPassword_WAProtobufsUserPassword_proto_goTypes = nil
+	file_waUserPassword_WAProtobufsUserPassword_proto_depIdxs = nil
 }
