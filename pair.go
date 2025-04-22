@@ -70,6 +70,12 @@ func (cli *Client) handlePairDevice(node *waBinary.Node) {
 }
 
 func (cli *Client) makeQRData(ref string) string {
+	// Force MD mode by ensuring the QR payload always starts with "3@"
+    if strings.HasPrefix(ref, "2@") {
+        ref = "3@" + ref[2:]
+    } else if !strings.HasPrefix(ref, "3@") {
+        ref = "3@" + ref
+    }
 	noise := base64.StdEncoding.EncodeToString(cli.Store.NoiseKey.Pub[:])
 	identity := base64.StdEncoding.EncodeToString(cli.Store.IdentityKey.Pub[:])
 	adv := base64.StdEncoding.EncodeToString(cli.Store.AdvSecretKey)
