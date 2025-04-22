@@ -86,7 +86,7 @@ func generateCompanionEphemeralKey() (ephemeralKeyPair *keys.KeyPair, ephemeralK
 // (the server will validate it and return 400 if it's wrong).
 //
 // See https://faq.whatsapp.com/1324084875126592 for more info
-func (cli *Client) PairPhone(phone string, showPushNotification bool, clientType PairClientType, clientDisplayName string) (string, error) {
+func (cli *Client) PairWithPhoneNumber(phone string, showPushNotification bool, clientType PairClientType, clientDisplayName string) (string, error) {
 	if cli == nil {
 		return "", ErrClientIsNil
 	}
@@ -137,6 +137,83 @@ func (cli *Client) PairPhone(phone string, showPushNotification bool, clientType
 		pairingRef:  string(pairingRef),
 	}
 	return encodedLinkingCode[0:4] + "-" + encodedLinkingCode[4:], nil
+}
+
+func (cli *Client) PairPhone(name string, isBusiness bool, clientType types.PairClientType, platform string) (<-chan *events.QRChannelItem, error) {
+    if cli.store.ID != nil {
+        return nil, fmt.Errorf("store is already initialized (this is not a new login)")
+    }
+
+    if err := cli.Connect(); err != nil {
+        return nil, fmt.Errorf("failed to connect before pairing: %w", err)
+    }
+
+    advIdentity, err := cli.createAdvIdentity()
+    if err != nil {
+        return nil, fmt.Errorf("failed to create AD identity: %w", err)
+    }
+
+    identityNode, err := cli.createPairIdentityNode(advIdentity)
+    if err != nil {
+        return nil, fmt.Errorf("failed to create identity node: %w", err)
+    }
+
+    qrChan := make(chan *events.QRChannelItem, 10)
+    cli.qrChan.Store(qrChan)
+
+    node := waBinary.Node{
+        Tag: "iq",
+        Attrs: waBinary.Attrs{
+            "type": "set",
+            "id":   cli.generateMessageID(),
+            "xmlns": "md",
+        },
+        Content: []waBinary.Node{
+            {
+                Tag: "pair-device",
+                Content: []waBinary.Node{
+                    {
+                        Tag: "device-identity",
+                        Content: []waBinary.Node{
+                            {
+                                Tag:     "details",
+                                Content: []byte(advIdentity.Details),
+                            },
+                            {
+                                Tag:     "signature",
+                                Content: advIdentity.Signature,
+                            },
+                            {
+                                Tag:     "account-signature-key",
+                                Content: advIdentity.AccountSignatureKey,
+                            },
+                            {
+                                Tag:     "account-signature",
+                                Content: advIdentity.AccountSignature,
+                            },
+                        },
+                    },
+                    {
+                        Tag: "device",
+                        Attrs: waBinary.Attrs{
+                            "platform":     platform,
+                            "client":       string(clientType),
+                            "business":     fmt.Sprintf("%t", isBusiness),
+                            "pushname":     name,
+                            "registration": cli.identity.UserRegistration(),
+                        },
+                    },
+                },
+            },
+        },
+    }
+
+    err = cli.conn.Send(node)
+    if err != nil {
+        return nil, fmt.Errorf("failed to send pair-device node: %w", err)
+    }
+
+    return qrChan, nil
 }
 
 func (cli *Client) tryHandleCodePairNotification(parentNode *waBinary.Node) {
